@@ -126,7 +126,6 @@ fn words_are_not_anagrams_of_themselves() {
 }
 
 #[test]
-#[ignore]
 fn words_are_not_anagrams_of_themselves_even_if_letter_case_is_partially_different() {
     let word = "BANANA";
     let inputs = &["Banana"];
@@ -136,7 +135,6 @@ fn words_are_not_anagrams_of_themselves_even_if_letter_case_is_partially_differe
 }
 
 #[test]
-#[ignore]
 fn words_are_not_anagrams_of_themselves_even_if_letter_case_is_completely_different() {
     let word = "BANANA";
     let inputs = &["banana"];
@@ -146,7 +144,6 @@ fn words_are_not_anagrams_of_themselves_even_if_letter_case_is_completely_differ
 }
 
 #[test]
-#[ignore]
 fn words_other_than_themselves_can_be_anagrams() {
     let word = "LISTEN";
     let inputs = &["LISTEN", "Silent"];
@@ -156,7 +153,6 @@ fn words_other_than_themselves_can_be_anagrams() {
 }
 
 #[test]
-#[ignore]
 fn handles_case_of_greek_letters() {
     let word = "ΑΒΓ";
     let inputs = &["ΒΓΑ", "ΒΓΔ", "γβα", "αβγ"];
@@ -166,7 +162,6 @@ fn handles_case_of_greek_letters() {
 }
 
 #[test]
-#[ignore]
 fn different_characters_may_have_the_same_bytes() {
     let word = "a⬂";
     let inputs = &["€a"];
